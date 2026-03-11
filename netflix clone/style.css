@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  background: black;
+}
+
+.main {
+  background-image: url(assets/images/bg.jpg);
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  position: relative;
+}
+
+.main .overlay {
+  height: 70vh;
+  width: 100%;
+  background: black;
+  opacity: 0.66;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 65vw;
+  margin: auto;
+  height: 62px;
+}
+
+nav img {
+  width: 130px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  font-family: "Martel Sans", sans-serif;
+  height: calc(100% - 62px);
+  position: relative;
+  z-index: 10;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 23px;
+  padding: 0 30px;
+}
+
+.hero > :nth-child(1) {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.hero > :nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.hero > :nth-child(3) {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.seperation {
+  height: 7px;
+  background: rgb(46, 44, 44);
+  cursor: pointer;
+  position: relative;
+  z-index: 20;
+}
+
+.btn {
+  padding: 5px 10px;
+  color: white;
+  border-radius: 4px;
+  font-weight: 400px;
+}
+
+.lang-btn {
+  background: rgba(12, 12, 12, 0.6);
+  padding: 5px 20px;
+}
+
+.btn-red {
+  background: red;
+  padding: 6px 27px;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.main input {
+  border-radius: 4px;
+  padding: 6px 20px 6px 10px;
+  font-size: 17px;
+  background: rgba(12, 12, 12, 0.6);
+  border: 1px solid rgba(232, 231, 231, 0.4);
+  color: white;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+
+.btn-red-sm {
+  background: red;
+  padding: 5px 10px;
+}
+
+@media (max-width: 800px) {
+  nav {
+    max-width: 90vw;
+  }
+  nav img {
+    width: 85px;
+    position: relative;
+    z-index: 10;
+  }
+  .hero > :nth-child(1) {
+    font-size: 25px;
+  }
+  .hero > :nth-child(2) {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .lang-btn {
+    padding: 5px 10px;
+  }
+
+  .hero-buttons {
+    flex-wrap: wrap;
+  }
+  .main input {
+    padding: 5px 8px 5px 8px;
+  }
+  footer {
+    max-width: 90vw;
+  }
+}
+
+.first {
+  display: flex;
+
+  max-width: 65vw;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+@media (max-width: 1300px) {
+  .first {
+    flex-wrap: wrap;
+  }
+}
+
+.secImg {
+  position: relative;
+}
+
+.secImg img {
+  width: 445px;
+  position: relative;
+  z-index: 10;
+}
+
+.secImg video {
+  position: absolute;
+  overflow: hidden;
+  top: 51px;
+  right: 0;
+  width: 445px;
+}
+
+.first > div {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+
+.first > div :nth-child(1) {
+  font-size: 33px;
+  font-weight: bolder;
+  padding: 0px 20px;
+}
+
+.first > div :nth-child(2) {
+  font-size: 18px;
+  padding: 0px 20px;
+}
+
+.faq {
+  padding: 35px;
+}
+
+.faq h2 {
+  font-size: 33px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.faqBox {
+  display: flex;
+  background: #2d2d2d;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px auto;
+  max-width: 55vw;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.faqBox > span {
+  font-size: 20px;
+}
+
+.faqBox:hover {
+  background: rgb(106, 105, 105);
+  transition: all 0.3s ease-in;
+}
+
+footer {
+  max-width: 60vw;
+  margin: auto;
+  padding: 15px;
+}
+
+footer > .questions {
+  padding: 10px 0;
+}
+
+.footer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 1300px) {
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 800px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.footer .footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-item a {
+  font-size: 14px;
+}
